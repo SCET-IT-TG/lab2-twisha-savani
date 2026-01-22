@@ -1,5 +1,4 @@
-use companyDB
-
+db = db.getSiblingDB("collegeDB");
 db.employees.insertMany([
   { name: "Rahul", department: "IT", salary: 60000, age: 30 },
   { name: "Anita", department: "HR", salary: 45000, age: 28 },
@@ -19,3 +18,4 @@ db.employees.find({ age: { $lte: 25 } })
 db.employees.find({
   salary: { $gte: 40000, $lte: 80000 }
 })
+
