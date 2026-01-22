@@ -1,4 +1,4 @@
-use companyDB
+db = db.getSiblingDB("companyDB");
 
 db.employees.insertMany([
   { name: "Rahul", department: "IT", salary: 60000, age: 30 },
